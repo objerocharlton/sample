@@ -7,7 +7,7 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 gem 'devise'
-gem 'image_science'
+#gem 'image_science'
 gem 'paperclip'
 gem 'mini_magick'
 gem 'closure_tree', :git => 'https://github.com/mceachen/closure_tree.git'

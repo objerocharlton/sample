@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @my_organizer.title
+%p
+  %b Body:
+  = @my_organizer.body
+
+= link_to 'Edit', edit_my_organizer_path(@my_organizer)
+\|
+= link_to 'Back', my_organizers_path

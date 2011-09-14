@@ -1,0 +1,21 @@
+%h1 My Organizers
+
+%table
+  %tr
+    %th Title sample
+    %th Body
+    %th
+    %th
+    %th
+
+  - @my_organizers.each do |my_organizer|
+    %tr
+      %td= my_organizer.title
+      %td= my_organizer.body
+      %td= link_to 'Show', my_organizer
+      %td= link_to 'Edit', edit_my_organizer_path(my_organizer)
+      %td= link_to 'Destroy', my_organizer, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New My organizer', new_my_organizer_path

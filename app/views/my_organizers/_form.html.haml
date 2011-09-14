@@ -1,0 +1,16 @@
+= form_for @my_organizer do |f|
+  -if @my_organizer.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@my_organizer.errors.count, "error")} prohibited this my_organizer from being saved:"
+      %ul
+        - @my_organizer.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :body
+    = f.text_area :body
+  .actions
+    = f.submit 'Save'
